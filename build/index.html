@@ -1,0 +1,848 @@
+<!doctype html>
+<html class="sm:scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <meta name="description" content="LumberLake | Jack Russell Terriër"/>
+    <meta name="keywords" content="jack russell terrier kennel dog hond pup lumberlake"/>
+
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:site_name" content="Lumberlake">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lumberlake.onrender.com">
+    <meta property="og:title" content="Lumberlake">
+    <meta property="og:description" content="LumberLake | Jack Russell Terriër">
+    <meta property="og:image" content="https://lumberlake.onrender.com/assets/img/logo-small.png">
+
+    <meta name="author" content="Arts ICT; Tristan Arts"/>
+    <title>Lumberlake Dog Kennel</title>
+    <meta name="robots" content="max-snippet:-1,max-image-preview:standard,max-video-preview:-1">
+    <script defer src="dist/main.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet"/>
+    <!-- Define gradient here -->
+    <style>
+        .gradient {
+            background: linear-gradient(90deg,
+
+            #b45700 10%, /* Dog Brown */
+            #36755e 30%, /* Mont Vert Green */
+            #3092b6 50%, /* Lac Blue */
+            #36755e 65%, /* Mont Vert Green */
+            #b45700 95%); /* Dog Brown */
+        }
+
+        /*#6e2c00 0%, !* Dark Brown *!*/
+        /*#d35400 20%, !* Terra Cotta *!*/
+        /*#cb4335 40%, !* Brick Red *!*/
+        /*#a93226 60%, !* Deep Red  *!*/
+        /*#935116 80%); !* Dark Sand *!*/
+
+
+        :root {
+            --fill-color-light: #FFFFFF; /* White for light theme */
+            --fill-color-dark: #1F2937; /* Dark slate for dark theme */
+        }
+
+        body.dark-theme {
+            --fill-color: var(--fill-color-dark);
+        }
+
+        body {
+            --fill-color: var(--fill-color-light);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-700 bg-white dark:bg-slate-800 dark:text-white leading-normal tracking-normal dark-theme"
+        style="font-family: 'Source Sans Pro', sans-serif">
+<!--NAV -->
+<header class="bg-yellow-700 text-white sticky top-0 z-10 gradient">
+    <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-medium mr-2">
+            <a class="hover:opacity-90" href="https://www.facebook.com/lumberlake.jackrussells"><i class="fab fa-facebook text-blue-400"></i></a>
+            <a href="#home">
+                <span class="font-bold">Lumberlake</span>
+            </a>
+        </h1>
+        <div>
+            <button class="text-3xl md:hidden cursor-pointer relative w-8 h-8"
+                    id="hamburger-button">
+                <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"
+                ></div>
+            </button>
+            <nav aria-label="main" class="hidden md:block space-x-8 text-xl">
+                <a class="hover:opacity-90" href="#service"> Services </a>
+                <a class="hover:opacity-90" href="#pricing">Pups</a>
+                <a class="hover:opacity-90" href="#description"> Over ons </a>
+                <a class="hover:opacity-90" href="#about"> Onze Honden </a>
+                <a class="hover:opacity-90" href="#contact"> Contact </a>
+                <a class="hover:opacity-90" href="#fotoboek"> Foto's </a>
+            </nav>
+        </div>
+    </section>
+    <!--Mobile Nav Menu -->
+    <section class="absolute top-68 bg-zinc-950 dark:bg-zinc-950 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden"
+             id="mobile-menu">
+        <nav aria-label="mobile"
+             class="flex flex-col min-h-screen items-center py-8">
+            <a class="w-full text-center py-6 hover:opacity-80" href="#home"
+            >Home</a>
+            <a class="w-full text-center py-6 hover:opacity-80" href="#service"
+            >Services</a>
+            <a class="w-full text-center py-6 hover:opacity-80" href="#pricing"
+            >Pups</a>
+            <a class="w-full text-center py-6 hover:opacity-80" href="#description"
+            >Over Ons</a>
+            <a class="w-full text-center py-6 hover:opacity-80" href="#about"
+            >Onze Honden</a>
+            <a class="w-full text-center py-6 hover:opacity-80" href="#contact">
+                Contact
+            </a>
+            <a class="w-full text-center py-6 hover:opacity-80" href="#footer"
+            >Legal</a>
+            <a class="w-full text-center py-6 hover:opacity-80" href="#fotoboek"
+            > Fotoboek </a>
+            <a class="hover:opacity-90" href="https://www.facebook.com/lumberlake.jackrussells"><i class="fab fa-facebook text-blue-400"></i>facebook</a>
+
+        </nav>
+    </section>
+</header>
+<!--Hero-->
+<section
+        id="home"
+        class="gradient">
+    <div class="container mx-auto px-6 text-center py-20">
+        <!-- LOGO -->
+        <div>
+            <section class="max-w-4xl mx-auto flex justify-between items-center mb-3">
+                <img alt="design logo"
+                     class="sm:w-1/3 md:w-1/2 mx-auto rounded-full"
+                     src="assets/img/logo.png"/>
+            </section>
+        </div>
+        <h2 class="mb-6 text-4xl font-bold text-center text-white">
+            Welkom bij Lumberlake <br/>
+            Jack Russell Terriër Kennel!
+        </h2>
+        <h3 class="my-4 text-2xl text-white">
+            Wij zijn een kleinschalige kennel met raszuivere Jack Russell Terriërs die voldoen aan de eisen van de
+            Nederlandse Vereniging Jack Russell Terriër.
+        </h3>
+        <a href="#service">
+            <button class="bg-white text-black font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
+                Services
+            </button>
+        </a>
+    </div>
+    <!-- bottom wave svg -->
+    <div class="relative -mt-12 lg:-mt-24">
+        <svg viewBox="0 0 1428 174" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-2.000000, 44.000000)" fill="var(--fill-color)" fill-rule="nonzero">
+                    <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                          opacity="0.100000001"></path>
+                    <path
+                            d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                            opacity="0.100000001"
+                    ></path>
+                    <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                          id="Path-4" opacity="0.200000003"></path>
+                </g>
+                <g transform="translate(-4.000000, 76.000000)" fill="var(--fill-color)" fill-rule="nonzero">
+                    <path
+                            d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+                    ></path>
+                </g>
+            </g>
+        </svg>
+    </div>
+</section>
+<!-- Services -->
+<section class="container mx-auto px-6 py-20" id="service">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8 dark:text-slate-50 py-10 pt-10">
+        Services:
+    </h2>
+    <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2">
+            <h2 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Jack Russell Terriërs bij Lumberlake
+            </h2>
+            <h4 class="text-2xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Waar karakter, gezondheid en geluk hand in hand gaan.
+            </h4>
+            <p class="text-gray-600 dark:text-slate-300 mb-8 mr-4">
+                Lumberlake is een kleinschalige kennel gespecialiseerd in raszuivere Jack Russell Terriërs. We fokken
+                nestjes op basis van weloverwogen combinaties die aan de rasstandaarden voldoen, met speciale aandacht
+                voor het karakter van de ouders. Onze honden en pups zijn volledig geïntegreerd in het gezin, verblijven
+                niet in kennels, en genieten van veel beweging en stimulatie. We zijn gelegen nabij een erkend
+                hondenlosloopgebied van Venlo, wat bijdraagt aan het sociale en energieke karakter van de honden.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Kortom: het zijn energieke, vrije en zeer sociale honden met een eerlijk karakter. Wilt u meer
+                informatie, kijk dan eens verder op onze website of neem gerust contact met ons op.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Ontdek de charme van
+                <a href="#service_01">
+              <span
+                      class="text-yellow-600 dark:text-yellow-600 font-bold uppercase"
+              >kleinschalig</span
+              >
+                </a>gefokte,
+                <a href="#service_02">
+              <span
+                      class="text-yellow-600 dark:text-yellow-600 font-bold uppercase"
+              >sociale</span
+              >
+                </a>
+                Jack Russell Terriërs bij Lumberlake. Waar karakter,
+                gezondheid en geluk hand in hand gaan.
+            </p>
+        </div>
+        <div class="w-full mx-auto sm:w-1/2 m-4 p-4">
+            <img
+                    alt="image description"
+                    class="rounded-lg border-2 border-lime-700 sm:max-w-full sm:h-auto shadow-2xl"
+                    src="assets/img/lumberlake-banner.jpg"/>
+        </div>
+    </div>
+    <div class="flex items-center flex-wrap mb-20 pt-20" id="service_01">
+        <div class="w-full mx-auto sm:w-1/2 m-4 p-4">
+            <img
+                    alt="image description"
+                    class="rounded-lg border-2 border-lime-700 sm:max-w-full sm:h-auto shadow-2xl"
+                    src="assets/img/sociaal.jpg"
+            />
+        </div>
+        <div class="w-full md:w-1/2">
+            <h2
+                    class="text-3xl text-yellow-600 dark:text-yellow-600 font-bold mb-3 uppercase"
+            >
+                Kleinschalig:
+            </h2>
+            <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Met Zorg en Aandacht
+            </h4>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Bij Lumberlake staat kleinschaligheid centraal in onze nestjes. Elk nestje wordt met zorg en
+                aandacht gefokt, uit ouders die niet alleen voldoen aan de rasstandaarden, maar ook geselecteerd zijn op
+                karakter. Deze zorgvuldige aanpak garandeert dat onze Jack Russell Terriërs gezond, gelukkig en goed
+                aangepast zijn, klaar om een vreugdevolle aanvulling op uw huishouden te zijn.
+            </p>
+            <a href="#pricing">
+                <button
+                        class="BtnBlue text-white dark:text-white hover:text-amber-300 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider"
+                >
+                    Beschikbaarheid
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="flex items-center flex-wrap mb-20 mt-20 pt-20" id="service_02">
+        <div class="w-full md:w-1/2">
+            <h2
+                    class="text-3xl text-yellow-600 dark:text-yellow-600 font-bold mb-3 uppercase"
+            >
+                Sociaal:
+            </h2>
+            <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Leven in Harmonie
+            </h4>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Onze Jack Russell Terriërs genieten van een energiek en sociaal bestaan, volledig geïntegreerd in ons
+                gezin. Ze ervaren dagelijks de vrijheid en het plezier van het verkennen van natuurgebieden, waardoor ze
+                opgroeien tot vrolijke en evenwichtige metgezellen. Hun tijd buiten in een erkend hondenlosloopgebied
+                zorgt voor goed gesocialiseerde karakters, klaar om liefdevol deel uit te maken van hun nieuwe gezinnen.
+            </p>
+
+            <a href="#pricing">
+                <button
+                        class="BtnBlue text-white dark:text-white hover:text-amber-300 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider"
+                >
+                    Beschikbaarheid
+                </button>
+            </a>
+        </div>
+        <div class="w-full mx-auto sm:w-1/2 m-4 p-4">
+            <img
+                    alt="portfolio image"
+                    class="rounded-lg border-2 border-lime-700 sm:max-w-full sm:h-auto shadow-2xl"
+                    src="assets/img/emma-bijtgrens-aanleren.jpg"
+            />
+        </div>
+    </div>
+</section>
+<!--pricing-->
+<section class="bg-gray-100 mb-20 dark:bg-slate-800 dark:text-white"
+         id="pricing">
+    <div class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-slate-50 mb-8">
+            Beschikbaarheid
+        </h2>
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 mx-auto px-2 mb-4">
+                <a href="#contact">
+                    <div class="Premium bg-white rounded shadow-2xl border-8 border-amber-600 dark:border-amber-600 hover:opacity-90">
+                        <div class="h-164 overflow-hidden">
+                            <img
+                                    alt="image description"
+                                    class="mx-auto mt-4 object-cover h-full w-1/2 rounded-full"
+                                    src="assets/img/logo-alt-01.jpeg"
+                            />
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <h1 class="text-3xl text-center text-zinc-700 my-4 uppercase">
+                                Momenteel
+                                <br>
+                                geen Puppen
+                                <br>
+                                Beschikbaar
+                            </h1>
+                        </div>
+                        <button class="Btn mx-auto mb-2">
+                            <svg viewBox="0 0 576 512" height="1em" class="logoIcon">
+                                <path
+                                        d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"
+                                ></path>
+                            </svg>
+                            Contact
+                        </button>
+                        <p class="text-gray-700 text-base px-6 mb-5 text-center">
+                            voor meer informatie
+                        </p>
+                        <div class="flex justify-center items-center">
+                            <h2 class="text-2xl text-center text-gray-800 my-4">
+                                Neem contact op voor meer informatie
+                            </h2>
+                        </div>
+                        <p class="text-gray-900 text-xs md:text-sm px-6">
+                            De prijs voor een Jack Russel pup varieert momenteel van €1500 - €2000, afhankelijk van de fokker
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--description-->
+<section
+        id="description"
+        class="gradient">
+    <!-- top wave svg -->
+    <svg class="wave-top" viewBox="0 0 1439 147" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+                <g class="wave" fill="var(--fill-color)">
+                    <path
+                            d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+                    ></path>
+                </g>
+                <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+                    <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+                        <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                              opacity="0.100000001"></path>
+                        <path
+                                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                                opacity="0.100000001"
+                        ></path>
+                        <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                              opacity="0.200000003"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
+    <div class="container mx-auto px-6 text-center py-20">
+        <!-- LOGO -->
+        <div>
+            <section
+                    class="max-w-4xl mx-auto flex justify-between items-center mb-3"
+            >
+                <img
+                        alt="design logo"
+                        class="sm:w-1/2 mx-auto rounded-full"
+                        src="assets/img/logo.png"/>
+            </section>
+        </div>
+        <h2 class="mb-6 text-4xl font-bold text-center text-white">
+            Welkom bij <br/> Lumberlake
+        </h2>
+        <h3 class="my-4 text-2xl text-white">Lumberlake is een kleinschalige kennel gespecialiseerd in raszuivere Jack
+            Russell Terriërs!</h3>
+        <p class="mb-3 text-white">
+            Energieke, vrije en zeer sociale honden met een eerlijk karakter.
+        </p>
+        <a href="#location">
+            <button
+                    class="bg-white text-black font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider m-4"
+            >
+                Bezoek ons
+            </button>
+        </a>
+        <a href="https://www.facebook.com/lumberlake.jackrussells">
+            <button
+                    class="bg-blue-400 text-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider m-4"
+            >
+                <i class="fab fa-facebook"></i>facebook
+            </button>
+        </a>
+    </div>
+    <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2 p-4">
+            <img
+                    alt="image description"
+                    class="rounded-full sm:max-w-full sm:h-auto"
+                    src="assets/img/Emma-7.jpeg"
+            />
+        </div>
+        <div class="w-full md:w-1/2 px-8">
+            <h4 class="text-3xl text-slate-50 dark:text-slate-50 font-bold mb-3">
+                Ontdek de charme van kleinschalig gefokte, sociale Jack Russell Terriërs bij Lumberlake.
+            </h4>
+            <p class="text-slate-50 dark:text-slate-50  mb-8">
+                Sinds 1993 verrijkt de Jack Russell ons gezin, waardoor onze liefde voor dit ras alleen maar gegroeid
+                is. Onze kleinschalige kennel ademt toewijding voor raszuivere, gezonde Jack Russells. Ze leven als
+                gezinsleden, verkennen dagelijks de Venlose Heide, en groeien op tot vrije, energieke en sociale
+                karakters. Ons fokbeleid is gericht op het behouden en verbeteren van dit unieke ras, met focus op
+                gezondheid, karakter en rasstandaarden, zonder winstoogmerk. Voor ons staat de kwaliteit van leven en de
+                liefde voor elke hond voorop.
+            </p>
+        </div>
+    </div>
+    <!-- bottom wave svg -->
+    <div class="relative -mt-12 lg:-mt-24 ">
+        <svg viewBox="0 0 1428 174" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-2.000000, 44.000000)" fill="var(--fill-color)" fill-rule="nonzero">
+                    <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                          opacity="0.100000001"></path>
+                    <path
+                            d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                            opacity="0.100000001"
+                    ></path>
+                    <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                          id="Path-4" opacity="0.200000003"></path>
+                </g>
+                <g transform="translate(-4.000000, 76.000000)" fill="var(--fill-color)" fill-rule="nonzero">
+                    <path
+                            d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+                    ></path>
+                </g>
+            </g>
+        </svg>
+    </div>
+</section>
+<!-- ABOUT  -->
+<section class="container mx-auto py-20 px-6" id="about">
+    <h2
+            class="text-4xl font-bold text-center text-gray-800 mb-8 dark:text-slate-50"
+    >
+        Onze Honden:
+    </h2>
+    <h2
+            class="text-3xl font-bold text-center text-gray-800 mb-8 dark:text-slate-50"
+    >
+        Onze Dames:
+    </h2>
+    <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2 px-8">
+            <!-- titel-->
+            <h2 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Emma
+            </h2>
+            <h4 class="text-2xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                LumberLake Beyond the Ordinary
+            </h4>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Geboren op 2 april 2014. ECVO jaarlijkse controle. Zowel % Patella als PLL vrij bij DNA.
+            </p>
+            <!--CARD-->
+            <!--stats -->
+            <section id="stats" class=" m-8">
+                <div class="Gold flex flex-col items-center mx-auto w-72 md:w-72 h-auto pt-5 pb-7 border border-gray-200 rounded-lg space-y-8 shadow-lg">
+                    <section class="flex flex-col text-center space-y-1">
+                        <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+                            Emma's Prestaties
+                        </h2>
+                        <p class="text-slate-800 text-sm">
+                            LumberLake Beyond the Ordinary
+                        </p>
+                        <div class="space-y-2" id="prestaties-list">
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <!--image-->
+        <div class="w-full mx-auto sm:w-1/2 m-4 shadow-2xl">
+            <img
+                    alt="image description"
+                    class="rounded-lg border-2 border-yellow-600 sm:max-w-full sm:h-auto"
+                    src="assets/img/emma-stand.jpg"
+            />
+        </div>
+        <!--image-->
+        <div class="w-full sm:w-1/2 mx-auto p-4">
+            <img
+                    alt="image description"
+                    class="rounded-lg border-2 border-yellow-600 sm:max-w-full sm:h-auto"
+                    src="assets/img/mathilda-stand.jpg"
+            />
+        </div>
+        <div class="w-full md:w-1/2">
+            <!-- titel-->
+            <h2 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Mathilda
+            </h2>
+            <h4 class="text-2xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                LumberLake The Road to Freedom
+            </h4>
+            <!--text-->
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Geboren op 1 juni 2019. Zowel ECVO vrij, shunt vrij, % Patella als PLL vrij bij DNA.
+                Fokgeschiktheidskeurmerk van de Jack Russell Vrienden Vereniging.
+            </p>
+        </div>
+    </div>
+    <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2">
+            <!-- titel-->
+            <h2 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Abby
+            </h2>
+            <h4 class="text-2xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                LumberLake Eilian Glas
+            </h4>
+            <!--text-->
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Geboren op 2 juni 2019. Zowel ECVO vrij, shunt vrij, % Patella als PLL vrij bij DNA.
+                Fokgeschiktheidskeurmerk van de Jack Russell Vrienden Vereniging.
+            </p>
+        </div>
+        <!--image-->
+        <div class="w-full mx-auto sm:w-1/2 m-4">
+            <img
+                    alt="image description"
+                    class="rounded-lg border-2 border-yellow-600 sm:max-w-full sm:h-auto shadow-2xl"
+                    src="assets/img/abby-stand.jpg"
+            />
+        </div>
+        <div class="w-full mx-auto sm:w-1/2 m-4">
+            <img
+                    alt="image description"
+                    class="rounded-lg border-2 border-yellow-600 sm:max-w-full sm:h-auto shadow-2xl"
+                    src="assets/img/yvvy-stand.jpeg"
+            />
+        </div>
+        <div class="w-full md:w-1/2 pl-10">
+            <!-- titel-->
+            <h2 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                YvvY
+            </h2>
+            <h4 class="text-2xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Rijan Rangers To Love Somebody
+            </h4>
+            <!--text-->
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Geboren op 26 december 2020. Zowel ECVO vrij, shunt vrij, % Patella als PLL vrij bij DNA.
+                YvvY heeft haar fokgeschiktheidspunten op de show verkregen.
+            </p>
+        </div>
+    </div>
+    <h2
+            class="text-3xl font-bold text-center text-gray-800 mb-8 dark:text-slate-50"
+    >
+        Onze Heren:
+    </h2>
+    <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2">
+            <!-- titel-->
+            <h2 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Cooper
+            </h2>
+            <h4 class="text-2xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Biber Happy Flame
+            </h4>
+            <!--text-->
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Geboren op 27 januari 2020. Zowel ECVO vrij, % Patella als PLL vrij bij DNA. Fokgeschiktheidskeurmerk
+                van de Jack Russell Vrienden Vereniging.
+            </p>
+        </div>
+        <div class="w-full mx-auto sm:w-1/2 p-4">
+            <img
+                    alt="image description"
+                    class="rounded-lg border-2 border-yellow-600 sm:max-w-full sm:h-auto shadow-2xl"
+                    src="assets/img/cooper-stand.jpg"
+            />
+        </div>
+    </div>
+
+    <hr class="mx-auto bg-black dark:bg-white  w-1/2 mb-20"/>
+    <div class="flex items-center flex-wrap mb-20">
+        <!--image-->
+        <div class="w-full mx-auto sm:w-1/2 p-4">
+            <img
+                    alt="image description"
+                    class="rounded-lg border-2 border-yellow-600 sm:max-w-full sm:h-auto shadow-2xl"
+                    src="assets/img/waveing-pup.jpg"
+            />
+        </div>
+        <div class="w-full md:w-1/2">
+            <!-- titel-->
+            <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Ontdek de Wereld van Lumberlake's Jack Russell Terriërs
+            </h4>
+            <h4 class="text-2xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Waar Kwaliteit en Passie Samenkomen
+            </h4>
+            <!--text-->
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Bij Lumberlake staan liefde en zorg voor onze honden en hun pups centraal. Elk van onze Jack Russell
+                Terriërs wordt grootgebracht met de toewijding die ze verdienen, in een omgeving die hun natuurlijke
+                vrolijkheid en levendigheid voedt. Onze pups groeien op als onderdeel van ons gezin, omringd door de
+                prachtige natuur die hun nieuwsgierigheid en avontuurlijke geest aanwakkert. Kies voor een Lumberlake
+                pup en word onderdeel van een unieke familie waar de gezondheid en het welzijn van de hond voorop staan.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Ben je klaar om je leven te verrijken met een Jack Russell pup van Lumberlake? Neem contact met ons op
+                en ontdek jouw nieuwe beste vriend!
+            </p>
+        </div>
+    </div>
+</section>
+<!--LOCATION-->
+<section
+        id="location"
+        class="gradient">
+    <!-- top wave svg -->
+    <svg class="wave-top" viewBox="0 0 1439 147" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+                <g class="wave" fill="var(--fill-color)">
+                    <path
+                            d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+                    ></path>
+                </g>
+                <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+                    <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+                        <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                              opacity="0.100000001"></path>
+                        <path
+                                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                                opacity="0.100000001"
+                        ></path>
+                        <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                              opacity="0.200000003"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
+    <div class="container mx-auto px-6 text-center py-20 min-h-screen">
+        <h2 class="mb-6 text-4xl font-bold text-center text-white">
+            Ben je klaar om je leven te verrijken met een Jack Russell pup van Lumberlake?
+        </h2>
+        <h3 class="my-4 text-2xl text-white">
+            Neem contact met ons op<br>
+            en ontdek jouw nieuwe beste vriend!
+        </h3>
+        <!-- contact -->
+        <div class="container mx-auto px-6 py-20" id="contact">
+            <h2
+                    class="text-4xl font-bold text-center text-gray-800 dark:text-slate-50 mb-8"
+            >
+                Contact
+            </h2>
+            <div class="flex flex-wrap">
+                <div class="w-full px-2 mb-4">
+                    <div class="bg-white rounded shadow py-2">
+                        <h4 class="text-black text-center">Afspraak maken:</h4>
+                        <p class="text-gray-800 text-base px-6 mb-5">
+                            Telefonisch: <a class="hover:opacity-90" href="tel:+31650573274">(+31) 6 3402 4746</a
+                        ><br/>
+                            E-mail: <a class="hover:opacity-90" href="mailto:gerdaarts@gmail.com">gerdaarts@gmail.com</a>
+                            <br>
+                            <a class="hover:opacity-90" href="https://www.facebook.com/lumberlake.jackrussells"><i class="fab fa-facebook text-blue-400"></i>facebook</a>
+
+                        </p>
+                        <p class="text-gray-500 text-xs md:text-sm px-6">
+                            Overdag goed bereikbaar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bottom wave svg -->
+    <div class="relative -mt-12 lg:-mt-24">
+        <svg viewBox="0 0 1428 174" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-2.000000, 44.000000)" fill="var(--fill-color)" fill-rule="nonzero">
+                    <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                          opacity="0.100000001"></path>
+                    <path
+                            d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                            opacity="0.100000001"
+                    ></path>
+                    <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                          id="Path-4" opacity="0.200000003"></path>
+                </g>
+                <g transform="translate(-4.000000, 76.000000)" fill="var(--fill-color)" fill-rule="nonzero">
+                    <path
+                            d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+                    ></path>
+                </g>
+            </g>
+        </svg>
+    </div>
+</section>
+<!-- Testimonials -->
+<section class="bg-gray-300 dark:bg-slate-800 dark:text-white"
+         id="testimonials">
+    <div class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-slate-50 mb-8">
+            Testimonials
+        </h2>
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/3 px-2 mb-4">
+                <div class="bg-white rounded shadow py-2">
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        "Onze ervaring met Lumberlake Jack Russell Kennel was niets minder dan uitzonderlijk. Vanaf het
+                        moment dat we de website bezochten tot het moment dat we onze kleine pup in onze armen sloten,
+                        voelden we ons volledig ondersteund en geïnformeerd. De website straalt liefde en zorg uit, net
+                        zoals het team van Lumberlake dat doet. We konden duidelijk zien hoe gepassioneerd ze zijn over
+                        hun honden en het belang dat ze hechten aan het welzijn van de pups. Onze Jack Russell heeft ons
+                        gezin compleet gemaakt, en we hebben dat allemaal te danken aan Lumberlake."
+                    </p>
+                    <p class="text-gray-500 text-xs md:text-sm px-6">Martijn en Sophie</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 px-2 mb-4">
+                <div class="bg-white rounded shadow py-2">
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        "De website van Lumberlake gaf ons direct een goed gevoel. Het was duidelijk, informatief en vol
+                        met hartverwarmende verhalen en prachtige foto's van hun Jack Russells. Dit weerspiegelde
+                        perfect de realiteit toen we de kennel bezochten. We waren onder de indruk van de kennis en
+                        zorgzaamheid van het team. Ze namen de tijd om al onze vragen te beantwoorden en zorgden ervoor
+                        dat we de perfecte match vonden. Onze pup is gezond, gelukkig, en zeer goed gesocialiseerd,
+                        allemaal dankzij de fantastische start die hij bij Lumberlake kreeg."
+                    </p>
+                    <p class="text-gray-500 text-xs md:text-sm px-6">Lucas en Emma</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 px-2 mb-4">
+                <div class="bg-white rounded shadow py-2">
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        "Het kiezen van een pup via de website van Lumberlake was een vreugdevolle ervaring. De site was
+                        niet alleen makkelijk te navigeren, maar bood ook een schat aan kennis over het ras en hun
+                        specifieke zorgbehoeften. Lumberlake onderscheidt zich door hun toewijding aan kwaliteit en
+                        transparantie. Elk bezoek aan de kennel bevestigde de indruk die we online kregen: deze mensen
+                        zetten hun hart en ziel in de verzorging van hun honden. Onze Jack Russell is avontuurlijk,
+                        liefdevol, en heeft een geweldig temperament, wat een getuigenis is van de liefdevolle omgeving
+                        bij Lumberlake."
+                    </p>
+                    <p class="text-gray-500 text-xs md:text-sm px-6">David en Anita</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- images bucket -->
+<section class="bg-gray-300 dark:bg-slate-800 dark:text-white gradient"
+         id="image-bucket">
+    <!-- top wave svg -->
+    <svg class="wave-top" viewBox="0 0 1439 147" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+                <g class="wave" fill="var(--fill-color)">
+                    <path
+                            d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+                    ></path>
+                </g>
+                <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+                    <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+                        <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                              opacity="0.100000001"></path>
+                        <path
+                                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                                opacity="0.100000001"
+                        ></path>
+                        <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                              opacity="0.200000003"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
+    <!--Footer-->
+    <footer class="text-black text-sm" id="footer">
+        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+            <address>
+                <h2>Lumberlake</h2>
+                Email: <a href="mailto:iinfo@sherlobke.nl">gerdaarts@gmail.com</a><br/>
+                Phone: <a href="tel:+331624770098">(+31) 6 34024746</a>
+                Facebook: <a href="https://www.facebook.com/lumberlake.jackrussells">LumberLake</a>
+
+            </address>
+            <nav aria-label="footer" class="hidden md:flex flex-col gap-2">
+                <a class="hover:opacity-80" href="#home">Home</a>
+                <a class="hover:opacity-80" href="#service">Services</a>
+                <a class="hover:opacity-80" href="#pricing">Beschikbaarheid</a>
+                <a class="hover:opacity-80" href="#description">Over ons</a>
+                <a class="hover:opacity-80" href="#about">Onze Honden</a>
+                <a class="hover:opacity-80" href="#contact">Contact</a>
+                <a class="hover:opacity-80" href="https://www.facebook.com/lumberlake.jackrussells"><i class="fab fa-facebook text-blue-400"></i>facebook</a>
+
+            </nav>
+            <div class="flex flex-col sm:gap-2">
+                <a href="https://arts-ict.nl">
+                    <p class="text-right">
+                        &copy; <span id="year">2024</span> Arts ICT | All rights reserved
+                    </p>
+                </a>
+            </div>
+        </section>
+    </footer>
+    <div class="container-bucket mx-auto py-20 px-6" id="fotoboek">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8 dark:text-slate-50">
+            Foto boek:
+        </h2>
+        <p class="text-gray-800 text-base px-6 text-center">
+            Een verzameling van onze favoriete momenten
+        </p>
+        <div class="bucket"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+        <div class="hidden">
+            <img alt="image description" class="hidden" src="assets/photobook/1.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/2.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/3.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/4.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/5.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/6.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/7.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/8.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/9.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/10.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/11.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/12.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/13.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/14.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/15.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/16.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/17.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/18.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/19.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/20.jpg"/>
+            <img alt="image description" class="hidden" src="assets/photobook/21.jpg"/>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
