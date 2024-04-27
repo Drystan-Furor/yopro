@@ -6,7 +6,8 @@
   "scripts": {
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
     "prettier": "npx prettier --write **/*.html",
-    "build": "npx webpack --config webpack.config.js --watch",
+    "build": "npx webpack --mode production --config webpack.config.js --watch",
+    "dev": "webpack --mode development",
     "test": "test"
   },
   "author": "yona",
