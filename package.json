@@ -1,0 +1,25 @@
+{
+  "name": "yopro",
+  "version": "1.0.0",
+  "description": "relax we doen allemaal maar wat joh",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+    "prettier": "npx prettier --write **/*.html",
+    "build": "npx webpack --config webpack.config.js --watch",
+    "test": "test"
+  },
+  "author": "yona",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "tailwindcss": "^3.4.3",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npx webpack --config webpack.config.js"
+    }
+  }
+}
